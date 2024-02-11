@@ -84,7 +84,9 @@ ggplot(data = confMod, mapping = aes(x = row.names(confMod), y = coefs)) +
 #  factor:
 ?model.matrix
 
-model.matrix( ~ unique(nsibs), data = graduation) # I see a problem with the data here...
+model.matrix( ~ unique(nsibs), data = graduation) 
+
+# I see a problem with the data here...
 
 # As a side note, we can use unique() with model.matrix() to create a matrix 
 # of different combinations of factor levels to use with predict(). Though it's
